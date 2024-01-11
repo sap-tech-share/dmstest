@@ -1,0 +1,27 @@
+### Action test
+POST http://localhost:4004/odata/v4/my/TestAction
+Content-Type: multipart/form-data; boundary=MfnBoundry
+
+--MfnBoundry
+Content-Disposition: form-data; name="file"; filename="test1111797.txt"
+Content-Type: text/plain
+
+< ./test1111.txt
+
+--MfnBoundry
+Content-Disposition: form-data; name="repoId"
+
+e39f2fd1-8077-4404-a5be-c5d6183e2b64
+--MfnBoundry--
+
+
+### Function test
+GET http://localhost:4004/odata/v4/my/TestFunction()
+Content-Type: multipart/form-data; boundary=MfnBoundry
+
+--MfnBoundry
+Content-Disposition: form-data; name="file"; filename="test1111796.txt"
+Content-Type: text/plain
+
+< ./test1111.txt
+--MfnBoundry--

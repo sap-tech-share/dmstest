@@ -1,0 +1,37 @@
+{
+  "name": "dmstest",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.485.0",
+    "@sap-cloud-sdk/connectivity": "^3.10.0",
+    "@sap-cloud-sdk/http-client": "^3.10.0",
+    "@sap/cds": "^7",
+    "@sap/xsenv": "^4.2.0",
+    "@sap/xssec": "^3.6.1",
+    "cfenv": "^1.2.4",
+    "express": "^4",
+    "form-data": "^4.0.0",
+    "fs": "^0.0.1-security",
+    "multer": "^1.4.5-lts.1",
+    "passport": "^0.7.0",
+    "stream": "^0.0.2"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^7"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "test-hybrid": "cds watch --profile hybrid"
+  },
+  "cds": {
+    "requires": {
+      "auth": "xsuaa",
+      "destinations": true
+    }
+  }
+}
